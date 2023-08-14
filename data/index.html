@@ -1,0 +1,92 @@
+ 
+<!--
+Written by spoonie (Rick Spooner) for RobotsGo 
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+A Huge thankyou to Rui Santos https://randomnerdtutorials.com for his
+esp32 tutorials which this code is heavly based on.
+
+Thanks Rui :)  
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>THE CLAW WEB CONTROLL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="topnav">
+        <h1>THE CLAW WEB CONTROLL</h1>
+         <img src="Rlogo.png" alt="RobotsGo"> 
+    </div>
+    <div class="content">
+        <div class="card-grid">
+            <div class="card">
+                <p class="card-title">Claw</p>
+                <button class="button" onmousedown="clawOpen(this)" onmouseup="stop(this)" ontouchstart="clawOpen(this)" ontouchend="stop(this)">Open</button>
+                <button class="button" onmousedown="clawClose(this)" onmouseup="stop(this)" ontouchstart="clawClose(this)" ontouchend="stop(this)">Close</button>
+            </p>
+            </div>
+            <div class="card">
+                <p class="card-title">Claw Rotate</p>
+                <button class="button" onmousedown="rotateLeft(this)" onmouseup="stop(this)" ontouchstart="rotateLeft(this)" ontouchend="stop(this)">Left</button>
+                <button class="button" onmousedown="rotateRight(this)" onmouseup="stop(this)" ontouchstart="rotateRight(this)" ontouchend="stop(this)">Right</button>
+            </p>
+            </div>
+            <div class="card">
+                <p class="card-title">Stick</p>
+                <button class="button" onmousedown="stickUp(this)" onmouseup="stop(this)" ontouchstart="stickUp(this)" ontouchend="stop(this)">Up</button>
+                <button class="button" onmousedown="stickDown(this)" onmouseup="stop(this)" ontouchstart="stickDown(this)" ontouchend="stop(this)">Down</button>
+            </p>
+            </div>
+            <div class="card">
+                <p class="card-title">Boom</p>
+                <button class="button" onmousedown="boomForwards(this)" onmouseup="stop(this)" ontouchstart="boomForwards(this)" ontouchend="stop(this)">Forwards</button>
+                <button class="button" onmousedown="boomBackwards(this)" onmouseup="stop(this)" ontouchstart="boomBackwards(this)" ontouchend="stop(this)">Backwards</button>
+            </p>
+            </div>
+            <div class="card">
+                <p class="card-title">Slew</p>
+                <button class="button" onmousedown="slewLeft(this)" onmouseup="stop(this)" ontouchstart="slewLeft(this)" ontouchend="stop(this)">Left</button>
+                <button class="button" onmousedown="slewRight(this)" onmouseup="stop(this)" ontouchstart="slewRight(this)" ontouchend="stop(this)">Right</button>
+                </p>
+            </div>
+            <div class="card">
+                <p class="card-title">Home Servos</p>
+                <button class="button" onclick="home(this)" >Home All</button>                 
+            </div>
+            <div class="card">
+                <p class="card-title">GitHub</p>
+                 <a href="https://github.com/RobotsGo">RobotsGo GitHub Page</a>
+                </p>
+            </div>
+            <div class="card">
+                <p class="card-title">Website</p>
+                 <a href="https://robotsgo.net/">RobotsGo Website</a>
+                </p>
+            </div>
+            <div class="card">
+                <p class="card-title">Facebook</p>
+                 <a href="https://www.facebook.com/robotsgo">RobotsGo FaceBook Page</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
